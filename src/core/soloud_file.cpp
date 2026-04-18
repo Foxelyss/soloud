@@ -25,12 +25,12 @@ distribution.
 #undef _CRT_SECURE_NO_WARNINGS
 #define _CRT_SECURE_NO_WARNINGS
 
-#include "file.h"
+#include "soloud/file.h"
 
 #include <stdio.h>
 #include <string.h>
 
-#include "soloud.h"
+#include "soloud/soloud.h"
 
 namespace SoLoud {
 unsigned int File::read8() {

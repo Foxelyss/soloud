@@ -22,11 +22,11 @@ freely, subject to the following restrictions:
    distribution.
 */
 
-#include "eqfilter.h"
+#include "soloud/eqfilter.h"
 
 #include <string.h>
 
-#include "soloud.h"
+#include "soloud/soloud.h"
 
 namespace SoLoud {
 EqFilterInstance::EqFilterInstance(EqFilter* aParent) {

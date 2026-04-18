@@ -32,8 +32,8 @@ freely, subject to the following restrictions:
 #include "common/simple_window.h"
 #include "common/window.h"
 #include "imgui.h"
-#include "soloud.h"
-#include "wav.h"
+#include "soloud/soloud.h"
+#include "soloud/wav.h"
 
 namespace {
 

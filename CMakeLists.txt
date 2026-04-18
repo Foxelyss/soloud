@@ -25,7 +25,7 @@ set_target_properties(soloud PROPERTIES
   EXPORT_NAME soloud
 )
 
-set(SOLOUD_INCLUDE_DIR "${CMAKE_CURRENT_SOURCE_DIR}/include/soloud")
+set(SOLOUD_INCLUDE_DIR "${CMAKE_CURRENT_SOURCE_DIR}/include")
 
 target_include_directories(soloud PUBLIC
   $<BUILD_INTERFACE:${SOLOUD_INCLUDE_DIR}>

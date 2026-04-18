@@ -22,8 +22,8 @@ freely, subject to the following restrictions:
    distribution.
 */
 #include <string.h>
-#include "soloud.h"
-#include "speech.h"
+#include "soloud/soloud.h"
+#include "soloud/speech.h"
 
 
 namespace SoLoud

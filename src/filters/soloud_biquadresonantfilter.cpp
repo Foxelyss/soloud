@@ -27,12 +27,12 @@ Based on "Using the Biquad Resonant Filter",
 Phil Burk, Game Programming Gems 3, p. 606
 */
 
-#include "biquadresonantfilter.h"
+#include "soloud/biquadresonantfilter.h"
 
 #include <math.h>
 #include <string.h>
 
-#include "soloud.h"
+#include "soloud/soloud.h"
 
 namespace SoLoud {
 void BiquadResonantFilterInstance::calcBQRParams() {

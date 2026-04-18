@@ -22,12 +22,12 @@ freely, subject to the following restrictions:
    distribution.
 */
 
-#include "lofifilter.h"
+#include "soloud/lofifilter.h"
 
 #include <math.h>
 #include <string.h>
 
-#include "soloud.h"
+#include "soloud/soloud.h"
 
 namespace SoLoud {
 

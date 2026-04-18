@@ -22,9 +22,9 @@ freely, subject to the following restrictions:
    distribution.
 */
 
-#include "echofilter.h"
+#include "soloud/echofilter.h"
 
-#include "soloud.h"
+#include "soloud/soloud.h"
 
 namespace SoLoud {
 EchoFilterInstance::EchoFilterInstance(EchoFilter* aParent) {

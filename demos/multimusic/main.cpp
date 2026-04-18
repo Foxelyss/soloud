@@ -31,10 +31,10 @@ freely, subject to the following restrictions:
 #include "common/asset_manager.h"
 #include "common/simple_window.h"
 #include "common/window.h"
-#include "soloud.h"
-#include "sfxr.h"
-#include "wav.h"
-#include "wavstream.h"
+#include "soloud/soloud.h"
+#include "soloud/sfxr.h"
+#include "soloud/wav.h"
+#include "soloud/wavstream.h"
 
 namespace {
 

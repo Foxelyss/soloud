@@ -25,7 +25,7 @@ freely, subject to the following restrictions:
 #ifndef PADSYNTH_H
 #define PADSYNTH_H
 
-#include "wav.h"
+#include "soloud/wav.h"
 
 namespace SoLoud
 {

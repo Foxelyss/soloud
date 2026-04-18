@@ -22,9 +22,9 @@ freely, subject to the following restrictions:
    distribution.
 */
 
-#include "soloud.h"
+#include "soloud/soloud.h"
 #include "padsynth.h"
-#include "fft.h"
+#include "soloud/fft.h"
 #include <stdio.h>
 #include <stdlib.h>
 #include <math.h>

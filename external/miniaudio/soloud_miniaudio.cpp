@@ -23,7 +23,7 @@ distribution.
 */
 #include <stdlib.h>
 
-#include "soloud.h"
+#include "soloud/soloud.h"
 
 #define MINIAUDIO_IMPLEMENTATION
 #define MA_NO_NULL

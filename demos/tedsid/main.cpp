@@ -31,12 +31,12 @@ freely, subject to the following restrictions:
 #include "common/simple_window.h"
 #include "common/window.h"
 #include "imgui.h"
-#include "soloud.h"
-#include "bassboostfilter.h"
-#include "biquadresonantfilter.h"
-#include "dcremovalfilter.h"
-#include "echofilter.h"
-#include "tedsid.h"
+#include "soloud/soloud.h"
+#include "soloud/bassboostfilter.h"
+#include "soloud/biquadresonantfilter.h"
+#include "soloud/dcremovalfilter.h"
+#include "soloud/echofilter.h"
+#include "soloud/tedsid.h"
 
 namespace {
 

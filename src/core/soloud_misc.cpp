@@ -22,7 +22,7 @@ freely, subject to the following restrictions:
    distribution.
 */
 
-#include "misc.h"
+#include "soloud/misc.h"
 
 #include <math.h>
 

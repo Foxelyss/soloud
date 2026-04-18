@@ -22,9 +22,9 @@ freely, subject to the following restrictions:
    distribution.
 */
 
-#include "dcremovalfilter.h"
+#include "soloud/dcremovalfilter.h"
 
-#include "soloud.h"
+#include "soloud/soloud.h"
 
 namespace SoLoud {
 DCRemovalFilterInstance::DCRemovalFilterInstance(DCRemovalFilter* aParent) {

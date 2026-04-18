@@ -4,8 +4,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-#include "ay.h"
-#include "file.h"
+#include "soloud/ay.h"
+#include "soloud/file.h"
 
 ChipPlayer::ChipPlayer(SoLoud::AyInstance* aInstance)
     : buffer(8192), chip(buffer), chip2(buffer), mInstance(aInstance) {

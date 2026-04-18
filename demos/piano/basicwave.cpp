@@ -23,7 +23,7 @@ freely, subject to the following restrictions:
 */
 
 #include "basicwave.h"
-#include "misc.h"
+#include "soloud/misc.h"
 
 
 namespace SoLoud

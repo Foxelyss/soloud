@@ -22,11 +22,11 @@ freely, subject to the following restrictions:
    distribution.
 */
 
-#include "bassboostfilter.h"
+#include "soloud/bassboostfilter.h"
 
 #include <string.h>
 
-#include "soloud.h"
+#include "soloud/soloud.h"
 
 namespace SoLoud {
 BassboostFilterInstance::BassboostFilterInstance(BassboostFilter* aParent) {

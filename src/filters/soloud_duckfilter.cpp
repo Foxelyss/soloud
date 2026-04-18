@@ -22,9 +22,9 @@ freely, subject to the following restrictions:
    distribution.
 */
 
-#include "duckfilter.h"
+#include "soloud/duckfilter.h"
 
-#include "soloud.h"
+#include "soloud/soloud.h"
 
 namespace SoLoud {
 DuckFilterInstance::DuckFilterInstance(DuckFilter* aParent) {

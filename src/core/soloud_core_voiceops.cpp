@@ -22,7 +22,7 @@ freely, subject to the following restrictions:
    distribution.
 */
 
-#include "soloud.h"
+#include "soloud/soloud.h"
 
 // Direct voice operations (no mutexes - called from other functions)
 

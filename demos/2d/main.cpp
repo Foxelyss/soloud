@@ -5,9 +5,9 @@
 #include "common/simple_window.h"
 #include "common/window.h"
 #include "imgui.h"
-#include "soloud.h"
-#include "sfxr.h"
-#include "speech.h"
+#include "soloud/soloud.h"
+#include "soloud/sfxr.h"
+#include "soloud/speech.h"
 
 namespace {
 

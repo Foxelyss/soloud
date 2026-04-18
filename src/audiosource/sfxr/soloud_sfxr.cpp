@@ -26,8 +26,8 @@ freely, subject to the following restrictions:
 #include <stdlib.h>
 #include <stdio.h>
 #include <math.h>
-#include "sfxr.h"
-#include "file.h"
+#include "soloud/sfxr.h"
+#include "soloud/file.h"
 
 namespace SoLoud
 {

@@ -25,7 +25,7 @@ freely, subject to the following restrictions:
 #ifndef BASICWAVE_H
 #define BASICWAVE_H
 
-#include "soloud.h"
+#include "soloud/soloud.h"
 #include "adsr.h"
 
 namespace SoLoud

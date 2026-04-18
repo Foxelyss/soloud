@@ -24,7 +24,7 @@ freely, subject to the following restrictions:
 
 #include <string.h>
 
-#include "internal.h"
+#include "soloud/internal.h"
 
 // Core "basic" operations - play, stop, etc
 

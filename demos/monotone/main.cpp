@@ -31,12 +31,12 @@ freely, subject to the following restrictions:
 #include "common/asset_manager.h"
 #include "common/simple_window.h"
 #include "common/window.h"
-#include "soloud.h"
-#include "biquadresonantfilter.h"
-#include "dcremovalfilter.h"
-#include "echofilter.h"
-#include "lofifilter.h"
-#include "monotone.h"
+#include "soloud/soloud.h"
+#include "soloud/biquadresonantfilter.h"
+#include "soloud/dcremovalfilter.h"
+#include "soloud/echofilter.h"
+#include "soloud/lofifilter.h"
+#include "soloud/monotone.h"
 
 namespace {
 

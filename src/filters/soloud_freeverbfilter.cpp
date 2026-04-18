@@ -22,12 +22,12 @@ freely, subject to the following restrictions:
    distribution.
 */
 
-#include "freeverbfilter.h"
+#include "soloud/freeverbfilter.h"
 
 #include <math.h>
 #include <string.h>
 
-#include "soloud.h"
+#include "soloud/soloud.h"
 
 namespace SoLoud {
 namespace FreeverbImpl {

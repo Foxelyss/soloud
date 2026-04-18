@@ -31,8 +31,8 @@ freely, subject to the following restrictions:
 #include <unistd.h>
 #endif
 
-#include "soloud.h"
-#include "thread.h"
+#include "soloud/soloud.h"
+#include "soloud/thread.h"
 
 namespace SoLoud {
 namespace Thread {

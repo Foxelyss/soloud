@@ -26,8 +26,8 @@ freely, subject to the following restrictions:
 #include <stdio.h>
 #include <string.h>
 #include <math.h>
-#include "monotone.h"
-#include "file.h"
+#include "soloud/monotone.h"
+#include "soloud/file.h"
 
 namespace SoLoud
 {

@@ -21,11 +21,11 @@ freely, subject to the following restrictions:
    3. This notice may not be removed or altered from any source
    distribution.
 */
-#include "flangerfilter.h"
+#include "soloud/flangerfilter.h"
 
 #include <string.h>
 
-#include "soloud.h"
+#include "soloud/soloud.h"
 
 namespace SoLoud {
 FlangerFilterInstance::FlangerFilterInstance(FlangerFilter* aParent) {

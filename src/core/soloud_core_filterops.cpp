@@ -22,7 +22,7 @@ freely, subject to the following restrictions:
    distribution.
 */
 
-#include "internal.h"
+#include "soloud/internal.h"
 
 // Core operations related to filters
 

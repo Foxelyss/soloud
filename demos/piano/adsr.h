@@ -25,7 +25,7 @@ freely, subject to the following restrictions:
 #ifndef ADSR_H
 #define ADSR_H
 
-#include "soloud.h"
+#include "soloud/soloud.h"
 
 namespace SoLoud
 {

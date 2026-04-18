@@ -24,9 +24,9 @@ freely, subject to the following restrictions:
 
 #include <print>
 
-#include "soloud.h"
-#include "speech.h"
-#include "thread.h"
+#include "soloud/soloud.h"
+#include "soloud/speech.h"
+#include "soloud/thread.h"
 
 int main() {
   SoLoud::Soloud soloud;  // SoLoud engine core

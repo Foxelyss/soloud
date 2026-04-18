@@ -22,9 +22,9 @@ freely, subject to the following restrictions:
    distribution.
 */
 
-#include "soloud.h"
-#include "fft.h"
-#include "internal.h"
+#include "soloud/soloud.h"
+#include "soloud/fft.h"
+#include "soloud/internal.h"
 
 namespace SoLoud {
 BusInstance::BusInstance(Bus* aParent) {

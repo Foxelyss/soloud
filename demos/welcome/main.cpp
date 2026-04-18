@@ -27,10 +27,10 @@ freely, subject to the following restrictions:
 #include <string>
 
 #include "common/asset_manager.h"
-#include "soloud.h"
-#include "speech.h"
-#include "thread.h"
-#include "wav.h"
+#include "soloud/soloud.h"
+#include "soloud/speech.h"
+#include "soloud/thread.h"
+#include "soloud/wav.h"
 
 int main() {
   // Engine and sources

@@ -32,12 +32,12 @@ freely, subject to the following restrictions:
 #include "common/simple_window.h"
 #include "common/window.h"
 #include "imgui.h"
-#include "soloud.h"
-#include "biquadresonantfilter.h"
-#include "echofilter.h"
-#include "freeverbfilter.h"
-#include "lofifilter.h"
-#include "wavstream.h"
+#include "soloud/soloud.h"
+#include "soloud/biquadresonantfilter.h"
+#include "soloud/echofilter.h"
+#include "soloud/freeverbfilter.h"
+#include "soloud/lofifilter.h"
+#include "soloud/wavstream.h"
 
 namespace {
 

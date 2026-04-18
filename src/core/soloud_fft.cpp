@@ -24,11 +24,11 @@ freely, subject to the following restrictions:
 
 // FFT based on fftreal by Laurent de Soras, under WTFPL
 
-#include "fft.h"
+#include "soloud/fft.h"
 
 #include <string.h>
 
-#include "soloud.h"
+#include "soloud/soloud.h"
 
 namespace fftimpl {
 // Based on http://www.kurims.kyoto-u.ac.jp/~ooura/fft.html

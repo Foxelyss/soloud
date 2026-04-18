@@ -22,12 +22,12 @@ freely, subject to the following restrictions:
    distribution.
 */
 
-#include "robotizefilter.h"
+#include "soloud/robotizefilter.h"
 
 #include <string.h>
 
-#include "soloud.h"
-#include "misc.h"
+#include "soloud/soloud.h"
+#include "soloud/misc.h"
 
 namespace SoLoud {
 RobotizeFilterInstance::RobotizeFilterInstance(RobotizeFilter* aParent) {
