@@ -29,8 +29,8 @@ freely, subject to the following restrictions:
 #include "common/window.h"
 #include "imgui.h"
 #include "soloud.h"
-#include "soloud_biquadresonantfilter.h"
-#include "soloud_wav.h"
+#include "biquadresonantfilter.h"
+#include "wav.h"
 
 namespace {
 

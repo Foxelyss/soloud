@@ -32,11 +32,11 @@ freely, subject to the following restrictions:
 #include "common/window.h"
 #include "imgui.h"
 #include "soloud.h"
-#include "soloud_bassboostfilter.h"
-#include "soloud_biquadresonantfilter.h"
-#include "soloud_dcremovalfilter.h"
-#include "soloud_echofilter.h"
-#include "soloud_tedsid.h"
+#include "bassboostfilter.h"
+#include "biquadresonantfilter.h"
+#include "dcremovalfilter.h"
+#include "echofilter.h"
+#include "tedsid.h"
 
 namespace {
 

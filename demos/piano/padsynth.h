@@ -1,6 +1,6 @@
 /*
 SoLoud audio engine
-Copyright (c) 2013-2021 Jari Komppa
+Copyright (c) 2013-2018 Jari Komppa
 
 This software is provided 'as-is', without any express or implied
 warranty. In no event will the authors be held liable for any damages
@@ -22,44 +22,21 @@ freely, subject to the following restrictions:
    distribution.
 */
 
-#ifndef BASICWAVE_H
-#define BASICWAVE_H
+#ifndef PADSYNTH_H
+#define PADSYNTH_H
 
-#include "soloud.h"
-#include "soloud_adsr.h"
+#include "wav.h"
 
 namespace SoLoud
 {
-	class Basicwave;
-
-	class BasicwaveInstance : public AudioSourceInstance
-	{
-		Basicwave *mParent;
-		float mFreq;
-		int mOffset;
-		float mT;
-	public:
-		BasicwaveInstance(Basicwave *aParent);
-		virtual unsigned int getAudio(float *aBuffer, unsigned int aSamplesToRead, unsigned int aBufferSize);
-		virtual bool hasEnded();
-	};
-
-	class Basicwave : public AudioSource
-	{
-	public:
-		ADSR mADSR;
-		float mFreq;
-		float mSuperwaveScale;
-		float mSuperwaveDetune;
-		int mWaveform;
-		bool mSuperwave;
-		Basicwave();
-		virtual ~Basicwave();
-		void setSamplerate(float aSamplerate);
-		void setWaveform(int aWaveform);
-		void setFreq(float aFreq, bool aSupewave = false);
-		virtual AudioSourceInstance *createInstance();
-	};
-};
-
+	result generatePadsynth(
+		SoLoud::Wav &aTarget,
+		unsigned int aHarmonicCount,
+		float *aHarmonics,
+		float aBandwidth = 0.25f,
+		float aBandwidthScale = 1.0f,
+		float aPrincipalFreq = 440.0f,
+		float aSampleRate = 44100.0f,
+		int aSizePow = 18);
+}
 #endif

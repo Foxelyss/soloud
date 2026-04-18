@@ -22,7 +22,7 @@ freely, subject to the following restrictions:
    distribution.
 */
 
-#include "soloud_echofilter.h"
+#include "echofilter.h"
 
 #include "soloud.h"
 

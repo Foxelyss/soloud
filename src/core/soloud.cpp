@@ -27,9 +27,9 @@ freely, subject to the following restrictions:
 #include <stdlib.h>
 #include <string.h>
 
-#include "soloud_fft.h"
-#include "soloud_internal.h"
-#include "soloud_thread.h"
+#include "fft.h"
+#include "internal.h"
+#include "thread.h"
 
 #ifdef SOLOUD_SSE_INTRINSICS
 #include <xmmintrin.h>

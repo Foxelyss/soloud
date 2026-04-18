@@ -33,9 +33,9 @@ freely, subject to the following restrictions:
 #include "common/window.h"
 #include "imgui.h"
 #include "soloud.h"
-#include "soloud_duckfilter.h"
-#include "soloud_speech.h"
-#include "soloud_wav.h"
+#include "duckfilter.h"
+#include "speech.h"
+#include "wav.h"
 
 namespace {
 

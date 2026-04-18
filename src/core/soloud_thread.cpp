@@ -32,7 +32,7 @@ freely, subject to the following restrictions:
 #endif
 
 #include "soloud.h"
-#include "soloud_thread.h"
+#include "thread.h"
 
 namespace SoLoud {
 namespace Thread {

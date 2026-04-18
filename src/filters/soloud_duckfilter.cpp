@@ -22,7 +22,7 @@ freely, subject to the following restrictions:
    distribution.
 */
 
-#include "soloud_duckfilter.h"
+#include "duckfilter.h"
 
 #include "soloud.h"
 

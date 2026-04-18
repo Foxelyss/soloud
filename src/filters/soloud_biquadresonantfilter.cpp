@@ -27,7 +27,7 @@ Based on "Using the Biquad Resonant Filter",
 Phil Burk, Game Programming Gems 3, p. 606
 */
 
-#include "soloud_biquadresonantfilter.h"
+#include "biquadresonantfilter.h"
 
 #include <math.h>
 #include <string.h>

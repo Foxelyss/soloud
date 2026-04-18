@@ -1,6 +1,6 @@
 /*
 SoLoud audio engine
-Copyright (c) 2013-2014 Jari Komppa
+Copyright (c) 2020 Jari Komppa
 
 This software is provided 'as-is', without any express or implied
 warranty. In no event will the authors be held liable for any damages
@@ -22,36 +22,46 @@ freely, subject to the following restrictions:
    distribution.
 */
 
-#include <print>
+#ifndef SOLOUD_NOISE_H
+#define SOLOUD_NOISE_H
 
 #include "soloud.h"
-#include "speech.h"
-#include "thread.h"
+#include "misc.h"
 
-int main() {
-  SoLoud::Soloud soloud;  // SoLoud engine core
-  SoLoud::Speech speech;  // A sound source (speech, in this case)
+namespace SoLoud {
+class Noise;
 
-  // Configure sound source
-  speech.setText("1 2 3   1 2 3   Hello world. Welcome to So-Loud.");
+class NoiseInstance : public AudioSourceInstance {
+ public:
+  NoiseInstance(Noise* aParent);
+  ~NoiseInstance();
 
-  // Initialize SoLoud
-  const auto init_res = soloud.init();
+  virtual unsigned int getAudio(
+    float* aBuffer, unsigned int aSamplesToRead, unsigned int aBufferSize);
+  virtual bool hasEnded();
 
-  if (init_res != SoLoud::SO_NO_ERROR) {
-    std::println("Failed to initialize SoLoud, error: {}", init_res);
-    return 1;
-  }
+ public:
+  float mOctaveScale[10];
+  Misc::Prg mPrg;
+};
 
-  // Play the sound source (we could do this several times if we wanted)
-  soloud.play(speech);
+class Noise : public AudioSource {
+ public:
+  enum NOISETYPES { WHITE = 0, PINK, BROWNISH, BLUEISH };
 
-  // Wait until sounds have finished
-  while (soloud.getActiveVoiceCount() > 0) {
-    // Still going, sleep for a bit
-    SoLoud::Thread::sleep(100);
-  }
+  Noise();
 
-  // Clean up SoLoud
-  soloud.deinit();
-}
+  void setOctaveScale(float aOct0, float aOct1, float aOct2, float aOct3,
+    float aOct4, float aOct5, float aOct6, float aOct7, float aOct8,
+    float aOct9);
+  void setType(int aType);
+
+  virtual ~Noise();
+
+ public:
+  virtual AudioSourceInstance* createInstance();
+  float mOctaveScale[10];
+};
+};  // namespace SoLoud
+
+#endif

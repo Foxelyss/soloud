@@ -22,7 +22,7 @@ freely, subject to the following restrictions:
    distribution.
 */
 
-#include "soloud_freeverbfilter.h"
+#include "freeverbfilter.h"
 
 #include <math.h>
 #include <string.h>

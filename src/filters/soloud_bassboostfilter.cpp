@@ -22,7 +22,7 @@ freely, subject to the following restrictions:
    distribution.
 */
 
-#include "soloud_bassboostfilter.h"
+#include "bassboostfilter.h"
 
 #include <string.h>
 

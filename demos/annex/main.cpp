@@ -33,11 +33,11 @@ freely, subject to the following restrictions:
 #include "common/window.h"
 #include "imgui.h"
 #include "soloud.h"
-#include "soloud_biquadresonantfilter.h"
-#include "soloud_echofilter.h"
-#include "soloud_freeverbfilter.h"
-#include "soloud_lofifilter.h"
-#include "soloud_wavstream.h"
+#include "biquadresonantfilter.h"
+#include "echofilter.h"
+#include "freeverbfilter.h"
+#include "lofifilter.h"
+#include "wavstream.h"
 
 namespace {
 

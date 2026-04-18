@@ -22,7 +22,7 @@ freely, subject to the following restrictions:
    distribution.
 */
 
-#include "soloud_ay.h"
+#include "ay.h"
 
 #include <math.h>
 #include <stdio.h>
@@ -33,7 +33,7 @@ freely, subject to the following restrictions:
 #include "sndbuffer.h"
 #include "sndchip.h"
 #include "sndrender.h"
-#include "soloud_file.h"
+#include "file.h"
 #include "zx7decompress.h"
 
 namespace SoLoud {

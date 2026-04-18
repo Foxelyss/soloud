@@ -1,6 +1,6 @@
 /*
 SoLoud audio engine
-Copyright (c) 2020 Jari Komppa
+Copyright (c) 2013-2020 Jari Komppa
 
 This software is provided 'as-is', without any express or implied
 warranty. In no event will the authors be held liable for any damages
@@ -22,40 +22,58 @@ freely, subject to the following restrictions:
    distribution.
 */
 
-#ifndef SOLOUD_ROBOTIZEFILTER_H
-#define SOLOUD_ROBOTIZEFILTER_H
+#ifndef SOLOUD_EQFILTER_H
+#define SOLOUD_EQFILTER_H
 
 #include "soloud.h"
-#include "soloud_filter.h"
-#include "soloud_misc.h"
+#include "fftfilter.h"
 
 namespace SoLoud {
-class RobotizeFilter;
+class EqFilter;
 
-class RobotizeFilterInstance : public FilterInstance {
-  enum FILTERATTRIBUTE { WET = 0, FREQ, WAVE };
-  RobotizeFilter* mParent;
+class EqFilterInstance : public FFTFilterInstance {
+  enum FILTERATTRIBUTE {
+    WET = 0,
+    BAND1 = 1,
+    BAND2 = 2,
+    BAND3 = 3,
+    BAND4 = 4,
+    BAND5 = 5,
+    BAND6 = 6,
+    BAND7 = 7,
+    BAND8 = 8
+  };
+  EqFilter* mParent;
 
  public:
-  virtual void filterChannel(float* aBuffer, unsigned int aSamples,
+  virtual void fftFilterChannel(float* aFFTBuffer, unsigned int aSamples,
     float aSamplerate, time aTime, unsigned int aChannel,
     unsigned int aChannels);
-  RobotizeFilterInstance(RobotizeFilter* aParent);
+  EqFilterInstance(EqFilter* aParent);
 };
 
-class RobotizeFilter : public Filter {
+class EqFilter : public FFTFilter {
  public:
-  enum FILTERATTRIBUTE { WET = 0, FREQ, WAVE };
-  float mFreq;
-  int mWave;
+  enum FILTERATTRIBUTE {
+    WET = 0,
+    BAND1 = 1,
+    BAND2 = 2,
+    BAND3 = 3,
+    BAND4 = 4,
+    BAND5 = 5,
+    BAND6 = 6,
+    BAND7 = 7,
+    BAND8 = 8
+  };
   virtual int getParamCount();
   virtual const char* getParamName(unsigned int aParamIndex);
   virtual unsigned int getParamType(unsigned int aParamIndex);
   virtual float getParamMax(unsigned int aParamIndex);
   virtual float getParamMin(unsigned int aParamIndex);
-  void setParams(float aFreq, int aWaveform);
+  float mVolume[8];
+  result setParam(unsigned int aBand, float aVolume);
   virtual FilterInstance* createInstance();
-  RobotizeFilter();
+  EqFilter();
 };
 }  // namespace SoLoud
 

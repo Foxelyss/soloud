@@ -28,8 +28,8 @@ freely, subject to the following restrictions:
 #include <math.h>
 #include "sid.h"
 #include "ted.h"
-#include "soloud_tedsid.h"
-#include "soloud_file.h"
+#include "tedsid.h"
+#include "file.h"
 
 namespace SoLoud
 {

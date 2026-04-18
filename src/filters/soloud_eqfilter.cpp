@@ -22,7 +22,7 @@ freely, subject to the following restrictions:
    distribution.
 */
 
-#include "soloud_eqfilter.h"
+#include "eqfilter.h"
 
 #include <string.h>
 

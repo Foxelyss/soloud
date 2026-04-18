@@ -22,7 +22,7 @@ freely, subject to the following restrictions:
    distribution.
 */
 
-#include "soloud_waveshaperfilter.h"
+#include "waveshaperfilter.h"
 
 #include <math.h>
 #include <string.h>

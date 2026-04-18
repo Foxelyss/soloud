@@ -22,12 +22,12 @@ freely, subject to the following restrictions:
    distribution.
 */
 
-#ifndef SOLOUD_AUDIOSOURCE_H
-#define SOLOUD_AUDIOSOURCE_H
+#ifndef SOLOUD_INCLUDE_SOLOUD_AUDIOSOURCE_H
+#define SOLOUD_INCLUDE_SOLOUD_AUDIOSOURCE_H
 
 #include "soloud.h"
-#include "soloud_fader.h"
-#include "soloud_filter.h"
+#include "fader.h"
+#include "filter.h"
 
 namespace SoLoud {
 class AudioSource;

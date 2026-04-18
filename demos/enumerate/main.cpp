@@ -26,7 +26,7 @@ freely, subject to the following restrictions:
 #include <stdlib.h>
 
 #include "soloud.h"
-#include "soloud_thread.h"
+#include "thread.h"
 
 
 const char *getBackendEnumString(int aBackend) {

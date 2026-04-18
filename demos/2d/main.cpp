@@ -6,8 +6,8 @@
 #include "common/window.h"
 #include "imgui.h"
 #include "soloud.h"
-#include "soloud_sfxr.h"
-#include "soloud_speech.h"
+#include "sfxr.h"
+#include "speech.h"
 
 namespace {
 

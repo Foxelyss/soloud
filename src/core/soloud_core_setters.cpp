@@ -22,7 +22,7 @@ freely, subject to the following restrictions:
    distribution.
 */
 
-#include "soloud_internal.h"
+#include "internal.h"
 
 // Setters - set various bits of SoLoud state
 

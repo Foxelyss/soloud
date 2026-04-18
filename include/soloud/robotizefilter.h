@@ -1,6 +1,6 @@
 /*
 SoLoud audio engine
-Copyright (c) 2013-2015 Jari Komppa
+Copyright (c) 2020 Jari Komppa
 
 This software is provided 'as-is', without any express or implied
 warranty. In no event will the authors be held liable for any damages
@@ -22,38 +22,40 @@ freely, subject to the following restrictions:
    distribution.
 */
 
-#ifndef SOLOUD_BASSBOOSTFILTER_H
-#define SOLOUD_BASSBOOSTFILTER_H
+#ifndef SOLOUD_ROBOTIZEFILTER_H
+#define SOLOUD_ROBOTIZEFILTER_H
 
 #include "soloud.h"
-#include "soloud_fftfilter.h"
+#include "filter.h"
+#include "misc.h"
 
 namespace SoLoud {
-class BassboostFilter;
+class RobotizeFilter;
 
-class BassboostFilterInstance : public FFTFilterInstance {
-  enum FILTERATTRIBUTE { WET = 0, BOOST = 1 };
-  BassboostFilter* mParent;
+class RobotizeFilterInstance : public FilterInstance {
+  enum FILTERATTRIBUTE { WET = 0, FREQ, WAVE };
+  RobotizeFilter* mParent;
 
  public:
-  virtual void fftFilterChannel(float* aFFTBuffer, unsigned int aSamples,
+  virtual void filterChannel(float* aBuffer, unsigned int aSamples,
     float aSamplerate, time aTime, unsigned int aChannel,
     unsigned int aChannels);
-  BassboostFilterInstance(BassboostFilter* aParent);
+  RobotizeFilterInstance(RobotizeFilter* aParent);
 };
 
-class BassboostFilter : public FFTFilter {
+class RobotizeFilter : public Filter {
  public:
-  enum FILTERATTRIBUTE { WET = 0, BOOST = 1 };
+  enum FILTERATTRIBUTE { WET = 0, FREQ, WAVE };
+  float mFreq;
+  int mWave;
   virtual int getParamCount();
   virtual const char* getParamName(unsigned int aParamIndex);
   virtual unsigned int getParamType(unsigned int aParamIndex);
   virtual float getParamMax(unsigned int aParamIndex);
   virtual float getParamMin(unsigned int aParamIndex);
-  float mBoost;
-  result setParams(float aBoost);
+  void setParams(float aFreq, int aWaveform);
   virtual FilterInstance* createInstance();
-  BassboostFilter();
+  RobotizeFilter();
 };
 }  // namespace SoLoud
 

@@ -29,8 +29,8 @@ freely, subject to the following restrictions:
 #include "dr_flac.h"
 #include "dr_mp3.h"
 #include "dr_wav.h"
-#include "soloud_wavstream.h"
-#include "soloud_file.h"
+#include "wavstream.h"
+#include "file.h"
 #include "stb_vorbis.h"
 
 namespace SoLoud

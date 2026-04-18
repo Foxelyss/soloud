@@ -23,8 +23,8 @@ freely, subject to the following restrictions:
 */
 
 #include "soloud.h"
-#include "soloud_padsynth.h"
-#include "soloud_fft.h"
+#include "padsynth.h"
+#include "fft.h"
 #include <stdio.h>
 #include <stdlib.h>
 #include <math.h>

@@ -26,8 +26,8 @@ freely, subject to the following restrictions:
 #include <stdio.h>
 #include <stdlib.h>
 #include "soloud.h"
-#include "soloud_wav.h"
-#include "soloud_file.h"
+#include "wav.h"
+#include "file.h"
 #include "stb_vorbis.h"
 #include "dr_mp3.h"
 #include "dr_wav.h"

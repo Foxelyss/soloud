@@ -1,6 +1,6 @@
 /*
 SoLoud audio engine
-Copyright (c) 2020 Jari Komppa
+Copyright (c) 2013-2021 Jari Komppa
 
 This software is provided 'as-is', without any express or implied
 warranty. In no event will the authors be held liable for any damages
@@ -22,46 +22,44 @@ freely, subject to the following restrictions:
    distribution.
 */
 
-#ifndef SOLOUD_NOISE_H
-#define SOLOUD_NOISE_H
+#ifndef BASICWAVE_H
+#define BASICWAVE_H
 
 #include "soloud.h"
-#include "soloud_misc.h"
+#include "adsr.h"
 
-namespace SoLoud {
-class Noise;
+namespace SoLoud
+{
+	class Basicwave;
 
-class NoiseInstance : public AudioSourceInstance {
- public:
-  NoiseInstance(Noise* aParent);
-  ~NoiseInstance();
+	class BasicwaveInstance : public AudioSourceInstance
+	{
+		Basicwave *mParent;
+		float mFreq;
+		int mOffset;
+		float mT;
+	public:
+		BasicwaveInstance(Basicwave *aParent);
+		virtual unsigned int getAudio(float *aBuffer, unsigned int aSamplesToRead, unsigned int aBufferSize);
+		virtual bool hasEnded();
+	};
 
-  virtual unsigned int getAudio(
-    float* aBuffer, unsigned int aSamplesToRead, unsigned int aBufferSize);
-  virtual bool hasEnded();
-
- public:
-  float mOctaveScale[10];
-  Misc::Prg mPrg;
+	class Basicwave : public AudioSource
+	{
+	public:
+		ADSR mADSR;
+		float mFreq;
+		float mSuperwaveScale;
+		float mSuperwaveDetune;
+		int mWaveform;
+		bool mSuperwave;
+		Basicwave();
+		virtual ~Basicwave();
+		void setSamplerate(float aSamplerate);
+		void setWaveform(int aWaveform);
+		void setFreq(float aFreq, bool aSupewave = false);
+		virtual AudioSourceInstance *createInstance();
+	};
 };
-
-class Noise : public AudioSource {
- public:
-  enum NOISETYPES { WHITE = 0, PINK, BROWNISH, BLUEISH };
-
-  Noise();
-
-  void setOctaveScale(float aOct0, float aOct1, float aOct2, float aOct3,
-    float aOct4, float aOct5, float aOct6, float aOct7, float aOct8,
-    float aOct9);
-  void setType(int aType);
-
-  virtual ~Noise();
-
- public:
-  virtual AudioSourceInstance* createInstance();
-  float mOctaveScale[10];
-};
-};  // namespace SoLoud
 
 #endif

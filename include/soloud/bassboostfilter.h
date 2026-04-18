@@ -1,6 +1,6 @@
 /*
 SoLoud audio engine
-Copyright (c) 2013-2020 Jari Komppa
+Copyright (c) 2013-2015 Jari Komppa
 
 This software is provided 'as-is', without any express or implied
 warranty. In no event will the authors be held liable for any damages
@@ -22,58 +22,38 @@ freely, subject to the following restrictions:
    distribution.
 */
 
-#ifndef SOLOUD_EQFILTER_H
-#define SOLOUD_EQFILTER_H
+#ifndef SOLOUD_BASSBOOSTFILTER_H
+#define SOLOUD_BASSBOOSTFILTER_H
 
 #include "soloud.h"
-#include "soloud_fftfilter.h"
+#include "fftfilter.h"
 
 namespace SoLoud {
-class EqFilter;
+class BassboostFilter;
 
-class EqFilterInstance : public FFTFilterInstance {
-  enum FILTERATTRIBUTE {
-    WET = 0,
-    BAND1 = 1,
-    BAND2 = 2,
-    BAND3 = 3,
-    BAND4 = 4,
-    BAND5 = 5,
-    BAND6 = 6,
-    BAND7 = 7,
-    BAND8 = 8
-  };
-  EqFilter* mParent;
+class BassboostFilterInstance : public FFTFilterInstance {
+  enum FILTERATTRIBUTE { WET = 0, BOOST = 1 };
+  BassboostFilter* mParent;
 
  public:
   virtual void fftFilterChannel(float* aFFTBuffer, unsigned int aSamples,
     float aSamplerate, time aTime, unsigned int aChannel,
     unsigned int aChannels);
-  EqFilterInstance(EqFilter* aParent);
+  BassboostFilterInstance(BassboostFilter* aParent);
 };
 
-class EqFilter : public FFTFilter {
+class BassboostFilter : public FFTFilter {
  public:
-  enum FILTERATTRIBUTE {
-    WET = 0,
-    BAND1 = 1,
-    BAND2 = 2,
-    BAND3 = 3,
-    BAND4 = 4,
-    BAND5 = 5,
-    BAND6 = 6,
-    BAND7 = 7,
-    BAND8 = 8
-  };
+  enum FILTERATTRIBUTE { WET = 0, BOOST = 1 };
   virtual int getParamCount();
   virtual const char* getParamName(unsigned int aParamIndex);
   virtual unsigned int getParamType(unsigned int aParamIndex);
   virtual float getParamMax(unsigned int aParamIndex);
   virtual float getParamMin(unsigned int aParamIndex);
-  float mVolume[8];
-  result setParam(unsigned int aBand, float aVolume);
+  float mBoost;
+  result setParams(float aBoost);
   virtual FilterInstance* createInstance();
-  EqFilter();
+  BassboostFilter();
 };
 }  // namespace SoLoud
 

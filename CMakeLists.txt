@@ -25,7 +25,7 @@ set_target_properties(soloud PROPERTIES
   EXPORT_NAME soloud
 )
 
-set(SOLOUD_INCLUDE_DIR "${CMAKE_CURRENT_SOURCE_DIR}/include")
+set(SOLOUD_INCLUDE_DIR "${CMAKE_CURRENT_SOURCE_DIR}/include/soloud")
 
 target_include_directories(soloud PUBLIC
   $<BUILD_INTERFACE:${SOLOUD_INCLUDE_DIR}>
@@ -52,7 +52,7 @@ install(
 
 # Install headers (flat layout: include/soloud.h → <prefix>/include/soloud.h)
 install(
-  DIRECTORY "${SOLOUD_INCLUDE_DIR}/"
+  DIRECTORY "${CMAKE_CURRENT_SOURCE_DIR}/include/soloud"
   DESTINATION ${CMAKE_INSTALL_INCLUDEDIR}
   FILES_MATCHING PATTERN "*.h"
 )

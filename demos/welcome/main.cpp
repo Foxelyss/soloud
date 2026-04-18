@@ -28,9 +28,9 @@ freely, subject to the following restrictions:
 
 #include "common/asset_manager.h"
 #include "soloud.h"
-#include "soloud_speech.h"
-#include "soloud_thread.h"
-#include "soloud_wav.h"
+#include "speech.h"
+#include "thread.h"
+#include "wav.h"
 
 int main() {
   // Engine and sources

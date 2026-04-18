@@ -32,9 +32,9 @@ freely, subject to the following restrictions:
 #include "common/simple_window.h"
 #include "common/window.h"
 #include "soloud.h"
-#include "soloud_sfxr.h"
-#include "soloud_wav.h"
-#include "soloud_wavstream.h"
+#include "sfxr.h"
+#include "wav.h"
+#include "wavstream.h"
 
 namespace {
 

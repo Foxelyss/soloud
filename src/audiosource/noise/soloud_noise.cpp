@@ -26,7 +26,7 @@ freely, subject to the following restrictions:
 #include <stdio.h>
 #include <string.h>
 #include <math.h>
-#include "soloud_noise.h"
+#include "noise.h"
 
 namespace SoLoud
 {

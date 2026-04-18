@@ -35,12 +35,12 @@ freely, subject to the following restrictions:
  * ANY KIND. See http://www.dspguru.com/wol.htm for more information.
  */
 
-#include "soloud_fftfilter.h"
+#include "fftfilter.h"
 
 #include <string.h>
 
 #include "soloud.h"
-#include "soloud_fft.h"
+#include "fft.h"
 
 namespace SoLoud {
 

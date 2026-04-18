@@ -22,7 +22,7 @@ freely, subject to the following restrictions:
    distribution.
 */
 
-#include "soloud_dcremovalfilter.h"
+#include "dcremovalfilter.h"
 
 #include "soloud.h"
 

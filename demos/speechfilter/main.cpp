@@ -30,14 +30,14 @@ freely, subject to the following restrictions:
 #include "common/window.h"
 #include "imgui.h"
 #include "soloud.h"
-#include "soloud_biquadresonantfilter.h"
-#include "soloud_dcremovalfilter.h"
-#include "soloud_echofilter.h"
-#include "soloud_lofifilter.h"
-#include "soloud_robotizefilter.h"
-#include "soloud_speech.h"
-#include "soloud_vizsn.h"
-#include "soloud_waveshaperfilter.h"
+#include "biquadresonantfilter.h"
+#include "dcremovalfilter.h"
+#include "echofilter.h"
+#include "lofifilter.h"
+#include "robotizefilter.h"
+#include "speech.h"
+#include "vizsn.h"
+#include "waveshaperfilter.h"
 
 namespace {
 

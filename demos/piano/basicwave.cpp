@@ -22,8 +22,8 @@ freely, subject to the following restrictions:
    distribution.
 */
 
-#include "soloud_basicwave.h"
-#include "soloud_misc.h"
+#include "basicwave.h"
+#include "misc.h"
 
 
 namespace SoLoud
