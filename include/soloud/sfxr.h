@@ -23,8 +23,8 @@ freely, subject to the following restrictions:
    distribution.
 */
 
-#ifndef SFXR_H
-#define SFXR_H
+#ifndef SOLOUD_INCLUDE_SOLOUD_SFXR_H_
+#define SOLOUD_INCLUDE_SOLOUD_SFXR_H_
 
 #include "soloud.h"
 #include "misc.h"
@@ -145,4 +145,4 @@ class Sfxr : public AudioSource {
 };
 };  // namespace SoLoud
 
-#endif
+#endif  // SOLOUD_INCLUDE_SOLOUD_SFXR_H_

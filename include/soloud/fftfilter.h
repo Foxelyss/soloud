@@ -22,8 +22,8 @@ freely, subject to the following restrictions:
    distribution.
 */
 
-#ifndef SOLOUD_FFTFILTER_H
-#define SOLOUD_FFTFILTER_H
+#ifndef SOLOUD_INCLUDE_SOLOUD_FFTFILTER_H_
+#define SOLOUD_INCLUDE_SOLOUD_FFTFILTER_H_
 
 #include "soloud.h"
 
@@ -67,4 +67,4 @@ class FFTFilter : public Filter {
 };
 }  // namespace SoLoud
 
-#endif
+#endif  // SOLOUD_INCLUDE_SOLOUD_FFTFILTER_H_

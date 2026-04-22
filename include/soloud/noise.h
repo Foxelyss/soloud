@@ -22,8 +22,8 @@ freely, subject to the following restrictions:
    distribution.
 */
 
-#ifndef SOLOUD_NOISE_H
-#define SOLOUD_NOISE_H
+#ifndef SOLOUD_INCLUDE_SOLOUD_NOISE_H_
+#define SOLOUD_INCLUDE_SOLOUD_NOISE_H_
 
 #include "soloud.h"
 #include "misc.h"
@@ -64,4 +64,4 @@ class Noise : public AudioSource {
 };
 };  // namespace SoLoud
 
-#endif
+#endif  // SOLOUD_INCLUDE_SOLOUD_NOISE_H_

@@ -25,8 +25,8 @@ freely, subject to the following restrictions:
    distribution.
 */
 
-#ifndef SOLOUD_VIC_H
-#define SOLOUD_VIC_H
+#ifndef SOLOUD_INCLUDE_SOLOUD_VIC_H_
+#define SOLOUD_INCLUDE_SOLOUD_VIC_H_
 
 #include "soloud.h"
 
@@ -93,6 +93,7 @@ class Vic : public AudioSource {
   unsigned char m_regs[MAX_REGS];
   unsigned char m_noise[8192];
 };
+
 };  // namespace SoLoud
 
-#endif
+#endif  // SOLOUD_INCLUDE_SOLOUD_VIC_H_

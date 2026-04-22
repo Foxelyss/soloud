@@ -1,5 +1,5 @@
-#ifndef KLATT_H
-#define KLATT_H
+#ifndef SOLOUD_SRC_AUDIOSOURCE_SPEECH_KLATT_H_
+#define SOLOUD_SRC_AUDIOSOURCE_SPEECH_KLATT_H_
 
 #include "resonator.h"
 
@@ -150,4 +150,4 @@ public:
 	klatt();
 };
 
-#endif
+#endif  // SOLOUD_SRC_AUDIOSOURCE_SPEECH_KLATT_H_

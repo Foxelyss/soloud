@@ -22,8 +22,8 @@ freely, subject to the following restrictions:
    distribution.
 */
 
-#ifndef SOLOUD_WAVESHAPERFILTER_H
-#define SOLOUD_WAVESHAPERFILTER_H
+#ifndef SOLOUD_INCLUDE_SOLOUD_WAVESHAPERFILTER_H_
+#define SOLOUD_INCLUDE_SOLOUD_WAVESHAPERFILTER_H_
 
 #include "soloud.h"
 
@@ -57,4 +57,4 @@ class WaveShaperFilter : public Filter {
 };
 }  // namespace SoLoud
 
-#endif
+#endif  // SOLOUD_INCLUDE_SOLOUD_WAVESHAPERFILTER_H_

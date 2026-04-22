@@ -1,3 +1,5 @@
+#ifndef SOLOUD_SRC_AUDIOSOURCE_TEDSID_TED_H_
+#define SOLOUD_SRC_AUDIOSOURCE_TEDSID_TED_H_
 
 class TED 
 {
@@ -42,3 +44,5 @@ public:
     void setFilterOrder(unsigned int value);
     void initFilter(unsigned int sampleRate_, unsigned int filterOrder_);
 };
+
+#endif  // SOLOUD_SRC_AUDIOSOURCE_TEDSID_TED_H_

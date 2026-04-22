@@ -22,8 +22,8 @@ freely, subject to the following restrictions:
    distribution.
 */
 
-#ifndef SOLOUD_WAV_H
-#define SOLOUD_WAV_H
+#ifndef SOLOUD_INCLUDE_SOLOUD_WAV_H_
+#define SOLOUD_INCLUDE_SOLOUD_WAV_H_
 
 #include "soloud.h"
 
@@ -76,4 +76,4 @@ class Wav : public AudioSource {
 };
 };  // namespace SoLoud
 
-#endif
+#endif  // SOLOUD_INCLUDE_SOLOUD_WAV_H_

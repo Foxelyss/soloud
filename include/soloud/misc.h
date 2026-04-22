@@ -22,8 +22,8 @@ freely, subject to the following restrictions:
    distribution.
 */
 
-#ifndef SOLOUD_MISC_H
-#define SOLOUD_MISC_H
+#ifndef SOLOUD_INCLUDE_SOLOUD_MISC_H_
+#define SOLOUD_INCLUDE_SOLOUD_MISC_H_
 
 #include "soloud.h"
 
@@ -47,4 +47,4 @@ class Prg {
 };  // namespace Misc
 };  // namespace SoLoud
 
-#endif
+#endif  // SOLOUD_INCLUDE_SOLOUD_MISC_H_

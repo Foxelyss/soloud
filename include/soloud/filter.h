@@ -22,8 +22,8 @@ freely, subject to the following restrictions:
    distribution.
 */
 
-#ifndef SOLOUD_FILTER_H
-#define SOLOUD_FILTER_H
+#ifndef SOLOUD_INCLUDE_SOLOUD_FILTER_H_
+#define SOLOUD_INCLUDE_SOLOUD_FILTER_H_
 
 #include "soloud.h"
 
@@ -70,4 +70,4 @@ class Filter {
 };
 };  // namespace SoLoud
 
-#endif
+#endif  // SOLOUD_INCLUDE_SOLOUD_FILTER_H_

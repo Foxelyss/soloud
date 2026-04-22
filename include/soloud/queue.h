@@ -22,8 +22,8 @@ freely, subject to the following restrictions:
    distribution.
 */
 
-#ifndef SOLOUD_QUEUE_H
-#define SOLOUD_QUEUE_H
+#ifndef SOLOUD_INCLUDE_SOLOUD_QUEUE_H_
+#define SOLOUD_INCLUDE_SOLOUD_QUEUE_H_
 
 #include "soloud.h"
 
@@ -67,4 +67,4 @@ class Queue : public AudioSource {
 };
 };  // namespace SoLoud
 
-#endif
+#endif  // SOLOUD_INCLUDE_SOLOUD_QUEUE_H_

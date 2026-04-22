@@ -1,4 +1,5 @@
-#pragma once
+#ifndef SOLOUD_SRC_AUDIOSOURCE_AY_SNDBUFFER_H_
+#define SOLOUD_SRC_AUDIOSOURCE_AY_SNDBUFFER_H_
 
 union SNDSAMPLE {
   unsigned sample;  // left/right channels in low/high WORDs
@@ -82,3 +83,5 @@ class SNDBUFFER {
   }
 
 #endif
+
+#endif  // SOLOUD_SRC_AUDIOSOURCE_AY_SNDBUFFER_H_

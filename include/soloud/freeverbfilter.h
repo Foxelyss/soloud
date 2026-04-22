@@ -22,8 +22,8 @@ freely, subject to the following restrictions:
    distribution.
 */
 
-#ifndef SOLOUD_FREEVERBFILTER_H
-#define SOLOUD_FREEVERBFILTER_H
+#ifndef SOLOUD_INCLUDE_SOLOUD_FREEVERBFILTER_H_
+#define SOLOUD_INCLUDE_SOLOUD_FREEVERBFILTER_H_
 
 #include "soloud.h"
 
@@ -67,4 +67,4 @@ class FreeverbFilter : public Filter {
 };
 }  // namespace SoLoud
 
-#endif
+#endif  // SOLOUD_INCLUDE_SOLOUD_FREEVERBFILTER_H_

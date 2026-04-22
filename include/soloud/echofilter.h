@@ -22,8 +22,8 @@ freely, subject to the following restrictions:
    distribution.
 */
 
-#ifndef SOLOUD_ECHOFILTER_H
-#define SOLOUD_ECHOFILTER_H
+#ifndef SOLOUD_INCLUDE_SOLOUD_ECHOFILTER_H_
+#define SOLOUD_INCLUDE_SOLOUD_ECHOFILTER_H_
 
 #include "soloud.h"
 
@@ -61,4 +61,4 @@ class EchoFilter : public Filter {
 };
 }  // namespace SoLoud
 
-#endif
+#endif  // SOLOUD_INCLUDE_SOLOUD_ECHOFILTER_H_

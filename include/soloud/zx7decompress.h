@@ -8,8 +8,8 @@
  * Note that compressor has a different license!
  */
 
-#ifndef ZX7DECOMPRESS_H
-#define ZX7DECOMPRESS_H
+#ifndef SOLOUD_INCLUDE_SOLOUD_ZX7DECOMPRESS_H_
+#define SOLOUD_INCLUDE_SOLOUD_ZX7DECOMPRESS_H_
 
 #ifdef __cplusplus
 extern "C" {
@@ -112,4 +112,4 @@ static int zx7_decompress(
 }
 #endif
 
-#endif  // ZX7DECOMPRESS_H
+#endif  // SOLOUD_INCLUDE_SOLOUD_ZX7DECOMPRESS_H_

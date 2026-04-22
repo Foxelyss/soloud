@@ -1,5 +1,5 @@
-#ifndef _SID_H
-#define _SID_H
+#ifndef SOLOUD_SRC_AUDIOSOURCE_TEDSID_SID_H_
+#define SOLOUD_SRC_AUDIOSOURCE_TEDSID_SID_H_
 
 #define SOUND_FREQ_PAL_C64 985248
 #define TED_SOUND_CLOCK (221680)
@@ -177,4 +177,4 @@ inline int SIDsound::waveTriSawPulse(SIDVoice &v)
 	return (sm>>1) & (sm<<1);
 }
 
-#endif
+#endif  // SOLOUD_SRC_AUDIOSOURCE_TEDSID_SID_H_

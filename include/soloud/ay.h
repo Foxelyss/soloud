@@ -22,8 +22,8 @@ freely, subject to the following restrictions:
    distribution.
 */
 
-#ifndef AY_H
-#define AY_H
+#ifndef SOLOUD_INCLUDE_SOLOUD_AY_H_
+#define SOLOUD_INCLUDE_SOLOUD_AY_H_
 
 #include "soloud.h"
 
@@ -67,4 +67,4 @@ class Ay : public AudioSource {
 };
 };  // namespace SoLoud
 
-#endif
+#endif // SOLOUD_INCLUDE_SOLOUD_AY_H_

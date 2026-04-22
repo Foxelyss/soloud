@@ -22,8 +22,8 @@ freely, subject to the following restrictions:
    distribution.
 */
 
-#ifndef SOLOUD_WAVSTREAM_H
-#define SOLOUD_WAVSTREAM_H
+#ifndef SOLOUD_INCLUDE_SOLOUD_WAVSTREAM_H_
+#define SOLOUD_INCLUDE_SOLOUD_WAVSTREAM_H_
 
 #include <stdio.h>
 
@@ -105,4 +105,4 @@ class WavStream : public AudioSource {
 };
 };  // namespace SoLoud
 
-#endif
+#endif  // SOLOUD_INCLUDE_SOLOUD_WAVSTREAM_H_

@@ -1,5 +1,5 @@
-#ifndef _CHIPPLAYER_H_INCLUDED
-#define _CHIPPLAYER_H_INCLUDED
+#ifndef SOLOUD_SRC_AUDIOSOURCE_AY_SRC_CHIPPLAYER_H_
+#define SOLOUD_SRC_AUDIOSOURCE_AY_SRC_CHIPPLAYER_H_
 
 #include "sndchip.h"
 
@@ -36,4 +36,4 @@ class ChipPlayer {
   unsigned get_time(unsigned tick);
 };
 
-#endif  // _CHIPPLAYER_H_INCLUDED
+#endif  // SOLOUD_SRC_AUDIOSOURCE_AY_SRC_CHIPPLAYER_H_

@@ -3,8 +3,8 @@
    created under public domain license by SMT, jan.2006
 */
 
-#ifndef _SNDCHIP_H_INCLUDED
-#define _SNDCHIP_H_INCLUDED
+#ifndef SOLOUD_SRC_AUDIOSOURCE_AY_SNDCHIP_H_
+#define SOLOUD_SRC_AUDIOSOURCE_AY_SNDCHIP_H_
 
 #include "sndrender.h"
 
@@ -146,4 +146,4 @@ const SNDCHIP_PANTAB* const SNDR_PAN_BCA = &SNDR_PAN_BCA_S;
 const SNDCHIP_PANTAB* const SNDR_PAN_CAB = &SNDR_PAN_CAB_S;
 const SNDCHIP_PANTAB* const SNDR_PAN_CBA = &SNDR_PAN_CBA_S;
 
-#endif  // _SNDCHIP_H_INCLUDED
+#endif  // SOLOUD_SRC_AUDIOSOURCE_AY_SNDCHIP_H_

@@ -1,5 +1,5 @@
-#ifndef RESONATOR_H
-#define RESONATOR_H
+#ifndef SOLOUD_SRC_AUDIOSOURCE_SPEECH_RESONATOR_H_
+#define SOLOUD_SRC_AUDIOSOURCE_SPEECH_RESONATOR_H_
 
 class resonator
 {
@@ -41,4 +41,4 @@ public:
 	~resonator();
 };
 
-#endif
+#endif  // SOLOUD_SRC_AUDIOSOURCE_SPEECH_RESONATOR_H_

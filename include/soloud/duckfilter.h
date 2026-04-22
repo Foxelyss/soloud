@@ -22,8 +22,8 @@ freely, subject to the following restrictions:
    distribution.
 */
 
-#ifndef SOLOUD_DUCKFILTER_H
-#define SOLOUD_DUCKFILTER_H
+#ifndef SOLOUD_INCLUDE_SOLOUD_DUCKFILTER_H_
+#define SOLOUD_INCLUDE_SOLOUD_DUCKFILTER_H_
 
 #include "soloud.h"
 
@@ -63,4 +63,4 @@ class DuckFilter : public Filter {
 };
 }  // namespace SoLoud
 
-#endif
+#endif  // SOLOUD_INCLUDE_SOLOUD_DUCKFILTER_H_

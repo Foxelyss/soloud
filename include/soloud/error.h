@@ -21,8 +21,8 @@ freely, subject to the following restrictions:
    3. This notice may not be removed or altered from any source
    distribution.
 */
-#ifndef SOLOUD_ERROR_H
-#define SOLOUD_ERROR_H
+#ifndef SOLOUD_INCLUDE_SOLOUD_ERROR_H_
+#define SOLOUD_INCLUDE_SOLOUD_ERROR_H_
 
 namespace SoLoud {
 enum SOLOUD_ERRORS {
@@ -36,4 +36,4 @@ enum SOLOUD_ERRORS {
   UNKNOWN_ERROR = 7       // Other error
 };
 };
-#endif
+#endif  // SOLOUD_INCLUDE_SOLOUD_ERROR_H_

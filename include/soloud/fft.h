@@ -22,8 +22,8 @@ freely, subject to the following restrictions:
    distribution.
 */
 
-#ifndef SOLOUD_FFT_H
-#define SOLOUD_FFT_H
+#ifndef SOLOUD_INCLUDE_SOLOUD_FFT_H_
+#define SOLOUD_INCLUDE_SOLOUD_FFT_H_
 
 #include "soloud.h"
 
@@ -46,4 +46,4 @@ void ifft(float* aBuffer, unsigned int aBufferLength);
 };  // namespace FFT
 };  // namespace SoLoud
 
-#endif
+#endif  // SOLOUD_INCLUDE_SOLOUD_FFT_H_

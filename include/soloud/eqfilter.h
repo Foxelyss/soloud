@@ -22,8 +22,8 @@ freely, subject to the following restrictions:
    distribution.
 */
 
-#ifndef SOLOUD_EQFILTER_H
-#define SOLOUD_EQFILTER_H
+#ifndef SOLOUD_INCLUDE_SOLOUD_EQFILTER_H_
+#define SOLOUD_INCLUDE_SOLOUD_EQFILTER_H_
 
 #include "soloud.h"
 #include "fftfilter.h"
@@ -77,4 +77,4 @@ class EqFilter : public FFTFilter {
 };
 }  // namespace SoLoud
 
-#endif
+#endif  // SOLOUD_INCLUDE_SOLOUD_EQFILTER_H_

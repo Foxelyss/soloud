@@ -21,8 +21,8 @@ freely, subject to the following restrictions:
    3. This notice may not be removed or altered from any source
    distribution.
 */
-#ifndef SOLOUD_SPEECH_H
-#define SOLOUD_SPEECH_H
+#ifndef SOLOUD_INCLUDE_SOLOUD_SPEECH_H_
+#define SOLOUD_INCLUDE_SOLOUD_SPEECH_H_
 
 #include "../../src/audiosource/speech/darray.h"
 #include "../../src/audiosource/speech/klatt.h"
@@ -76,4 +76,4 @@ class SpeechInstance : public AudioSourceInstance {
 };
 };  // namespace SoLoud
 
-#endif
+#endif  // SOLOUD_INCLUDE_SOLOUD_SPEECH_H_

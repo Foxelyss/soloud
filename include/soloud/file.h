@@ -22,8 +22,8 @@ freely, subject to the following restrictions:
    distribution.
 */
 
-#ifndef SOLOUD_FILE_H
-#define SOLOUD_FILE_H
+#ifndef SOLOUD_INCLUDE_SOLOUD_FILE_H_
+#define SOLOUD_INCLUDE_SOLOUD_FILE_H_
 
 #include <stdio.h>
 
@@ -90,4 +90,4 @@ class MemoryFile : public File {
 };
 };  // namespace SoLoud
 
-#endif
+#endif  // SOLOUD_INCLUDE_SOLOUD_FILE_H_

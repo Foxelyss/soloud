@@ -22,8 +22,8 @@ freely, subject to the following restrictions:
    distribution.
 */
 
-#ifndef SOLOUD_THREAD_H
-#define SOLOUD_THREAD_H
+#ifndef SOLOUD_INCLUDE_SOLOUD_THREAD_H_
+#define SOLOUD_INCLUDE_SOLOUD_THREAD_H_
 
 #include "soloud.h"
 
@@ -81,4 +81,4 @@ class Pool {
 }  // namespace Thread
 }  // namespace SoLoud
 
-#endif
+#endif  // SOLOUD_INCLUDE_SOLOUD_THREAD_H_

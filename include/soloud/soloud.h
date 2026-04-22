@@ -22,8 +22,8 @@ freely, subject to the following restrictions:
    distribution.
 */
 
-#ifndef SOLOUD_H
-#define SOLOUD_H
+#ifndef SOLOUD_INCLUDE_SOLOUD_H_
+#define SOLOUD_INCLUDE_SOLOUD_H_
 
 #include <math.h>    // sin
 #include <stdlib.h>  // rand
@@ -637,6 +637,7 @@ class Soloud {
   // Active voices list needs to be recalculated
   bool mActiveVoiceDirty;
 };
+
 };  // namespace SoLoud
 
-#endif
+#endif  // SOLOUD_INCLUDE_SOLOUD_H_

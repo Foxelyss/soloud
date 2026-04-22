@@ -22,8 +22,8 @@ freely, subject to the following restrictions:
    distribution.
 */
 
-#ifndef SOLOUD_BASSBOOSTFILTER_H
-#define SOLOUD_BASSBOOSTFILTER_H
+#ifndef SOLOUD_INCLUDE_SOLOUD_BASSBOOSTFILTER_H_
+#define SOLOUD_INCLUDE_SOLOUD_BASSBOOSTFILTER_H_
 
 #include "soloud.h"
 #include "fftfilter.h"
@@ -57,4 +57,4 @@ class BassboostFilter : public FFTFilter {
 };
 }  // namespace SoLoud
 
-#endif
+#endif  // SOLOUD_INCLUDE_SOLOUD_BASSBOOSTFILTER_H_

@@ -3,7 +3,8 @@
    created under public domain license by SMT, jan.2006
 */
 
-#pragma once
+#ifndef SOLOUD_SRC_AUDIOSOURCE_AY_SNDRENDER_H_
+#define SOLOUD_SRC_AUDIOSOURCE_AY_SNDRENDER_H_
 
 #include "sndbuffer.h"
 
@@ -59,3 +60,5 @@ struct SNDOUT {
   unsigned timestamp;  // in 'system clock' ticks
   SNDSAMPLE newvalue;
 };
+
+#endif  // SOLOUD_SRC_AUDIOSOURCE_AY_SNDRENDER_H_

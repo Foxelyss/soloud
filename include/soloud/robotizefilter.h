@@ -22,8 +22,8 @@ freely, subject to the following restrictions:
    distribution.
 */
 
-#ifndef SOLOUD_ROBOTIZEFILTER_H
-#define SOLOUD_ROBOTIZEFILTER_H
+#ifndef SOLOUD_INCLUDE_SOLOUD_ROBOTIZEFILTER_H_
+#define SOLOUD_INCLUDE_SOLOUD_ROBOTIZEFILTER_H_
 
 #include "soloud.h"
 #include "filter.h"
@@ -59,4 +59,4 @@ class RobotizeFilter : public Filter {
 };
 }  // namespace SoLoud
 
-#endif
+#endif  // SOLOUD_INCLUDE_SOLOUD_ROBOTIZEFILTER_H_

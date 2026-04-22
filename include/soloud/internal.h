@@ -22,8 +22,8 @@ freely, subject to the following restrictions:
    distribution.
 */
 
-#ifndef SOLOUD_INTERNAL_H
-#define SOLOUD_INTERNAL_H
+#ifndef SOLOUD_INCLUDE_SOLOUD_INTERNAL_H_
+#define SOLOUD_INCLUDE_SOLOUD_INTERNAL_H_
 
 #include "soloud.h"
 
@@ -188,4 +188,4 @@ void interlace_samples_s16(const float* aSourceBuffer, short* aDestBuffer,
   h_++;                            \
   }
 
-#endif
+#endif  // SOLOUD_INCLUDE_SOLOUD_INTERNAL_H_

@@ -22,8 +22,8 @@ freely, subject to the following restrictions:
    distribution.
 */
 
-#ifndef SOLOUD_FLANGERFILTER_H
-#define SOLOUD_FLANGERFILTER_H
+#ifndef SOLOUD_INCLUDE_SOLOUD_FLANGERFILTER_H_
+#define SOLOUD_INCLUDE_SOLOUD_FLANGERFILTER_H_
 
 #include "soloud.h"
 
@@ -61,4 +61,4 @@ class FlangerFilter : public Filter {
 };
 }  // namespace SoLoud
 
-#endif
+#endif  // SOLOUD_INCLUDE_SOLOUD_FLANGERFILTER_H_

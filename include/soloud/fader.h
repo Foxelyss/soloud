@@ -22,8 +22,8 @@ freely, subject to the following restrictions:
    distribution.
 */
 
-#ifndef SOLOUD_FADER_H
-#define SOLOUD_FADER_H
+#ifndef SOLOUD_INCLUDE_SOLOUD_FADER_H_
+#define SOLOUD_INCLUDE_SOLOUD_FADER_H_
 
 #include "soloud.h"
 
@@ -59,4 +59,4 @@ class Fader {
 };
 };  // namespace SoLoud
 
-#endif
+#endif  // SOLOUD_INCLUDE_SOLOUD_FADER_H_

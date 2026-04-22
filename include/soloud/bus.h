@@ -22,8 +22,8 @@ freely, subject to the following restrictions:
    distribution.
 */
 
-#ifndef SOLOUD_BUS_H
-#define SOLOUD_BUS_H
+#ifndef SOLOUD_INCLUDE_BUS_H_
+#define SOLOUD_INCLUDE_BUS_H_
 
 #include "soloud.h"
 
@@ -110,4 +110,4 @@ class Bus : public AudioSource {
 };
 };  // namespace SoLoud
 
-#endif
+#endif  // SOLOUD_INCLUDE_BUS_H_

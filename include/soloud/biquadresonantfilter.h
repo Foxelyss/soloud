@@ -22,8 +22,8 @@ freely, subject to the following restrictions:
    distribution.
 */
 
-#ifndef SOLOUD_BQRFILTER_H
-#define SOLOUD_BQRFILTER_H
+#ifndef SOLOUD_INCLUDE_SOLOUD_BIQUADRESONANTFILTER_H_
+#define SOLOUD_INCLUDE_SOLOUD_BIQUADRESONANTFILTER_H_
 
 #include "soloud.h"
 
@@ -73,4 +73,4 @@ class BiquadResonantFilter : public Filter {
 };
 }  // namespace SoLoud
 
-#endif
+#endif  // SOLOUD_INCLUDE_SOLOUD_BIQUADRESONANTFILTER_H_

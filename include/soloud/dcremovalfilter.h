@@ -22,8 +22,8 @@ freely, subject to the following restrictions:
    distribution.
 */
 
-#ifndef SOLOUD_DCREMOVAL_H
-#define SOLOUD_DCREMOVAL_H
+#ifndef SOLOUD_INCLUDE_SOLOUD_DCREMOVALFILTER_H_
+#define SOLOUD_INCLUDE_SOLOUD_DCREMOVALFILTER_H_
 
 #include "soloud.h"
 
@@ -54,4 +54,4 @@ class DCRemovalFilter : public Filter {
 };
 }  // namespace SoLoud
 
-#endif
+#endif  // SOLOUD_INCLUDE_SOLOUD_DCREMOVALFILTER_H_

@@ -22,8 +22,8 @@ freely, subject to the following restrictions:
    distribution.
 */
 
-#ifndef MONOTONE_H
-#define MONOTONE_H
+#ifndef SOLOUD_INCLUDE_SOLOUD_MONOTONE_H_
+#define SOLOUD_INCLUDE_SOLOUD_MONOTONE_H_
 
 #include "soloud.h"
 #include "misc.h"
@@ -104,4 +104,4 @@ class Monotone : public AudioSource {
 };
 };  // namespace SoLoud
 
-#endif
+#endif  // SOLOUD_INCLUDE_SOLOUD_MONOTONE_H_

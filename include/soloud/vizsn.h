@@ -10,8 +10,8 @@ Integration and changes to work with SoLoud by Jari Komppa,
 released under same license.
 */
 
-#ifndef SOLOUD_VIZSN_H
-#define SOLOUD_VIZSN_H
+#ifndef SOLOUD_INCLUDE_SOLOUD_VIZSN_H_
+#define SOLOUD_INCLUDE_SOLOUD_VIZSN_H_
 
 #include "soloud.h"
 
@@ -76,6 +76,7 @@ class Vizsn : public AudioSource {
  public:
   virtual AudioSourceInstance* createInstance();
 };
+
 };  // namespace SoLoud
 
-#endif
+#endif  // SOLOUD_INCLUDE_SOLOUD_VIZSN_H_

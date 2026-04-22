@@ -22,8 +22,8 @@ freely, subject to the following restrictions:
    distribution.
 */
 
-#ifndef TEDSID_H
-#define TEDSID_H
+#ifndef SOLOUD_INCLUDE_SOLOUD_TEDSID_H_
+#define SOLOUD_INCLUDE_SOLOUD_TEDSID_H_
 
 #include "soloud.h"
 
@@ -70,4 +70,4 @@ class TedSid : public AudioSource {
 };
 };  // namespace SoLoud
 
-#endif
+#endif  // SOLOUD_INCLUDE_SOLOUD_TEDSID_H_

@@ -1,5 +1,5 @@
-#if !defined(DARRAY_H)
-#define DARRAY_H
+#ifndef SOLOUD_SRC_AUDIOSOURCE_SPEECH_DARRAY_H_
+#define SOLOUD_SRC_AUDIOSOURCE_SPEECH_DARRAY_H_
 
 class darray
 {
@@ -18,5 +18,4 @@ public:
 	char *getData() { return mData; } 
 };
 
-#endif
-
+#endif  // SOLOUD_SRC_AUDIOSOURCE_SPEECH_DARRAY_H_
