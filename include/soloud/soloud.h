@@ -31,26 +31,8 @@ freely, subject to the following restrictions:
 #ifdef SOLOUD_NO_ASSERTS
 #define SOLOUD_ASSERT(x)
 #else
-#ifdef _MSC_VER
-#include <stdio.h>  // for sprintf in asserts
-#ifndef VC_EXTRALEAN
-#define VC_EXTRALEAN
-#endif
-#ifndef WIN32_LEAN_AND_MEAN
-#define WIN32_LEAN_AND_MEAN
-#endif
-#include <windows.h>  // only needed for OutputDebugStringA, should be solved somehow.
-#define SOLOUD_ASSERT(x)                                                   \
-  if (!(x)) {                                                              \
-    char temp[200];                                                        \
-    sprintf(temp, "%s(%d): assert(%s) failed.\n", __FILE__, __LINE__, #x); \
-    OutputDebugStringA(temp);                                              \
-    __debugbreak();                                                        \
-  }
-#else
 #include <assert.h>  // assert
 #define SOLOUD_ASSERT(x) assert(x)
-#endif
 #endif
 
 #ifdef WITH_SDL
